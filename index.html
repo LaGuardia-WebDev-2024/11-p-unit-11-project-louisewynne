@@ -21,26 +21,39 @@ Select ONE Additional
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <button id="mem1-button">Memory #1</button>
-    <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
+    <button id="mem1-button">Memory 1</button>
+    <button id="mem2-button">Memory 2</button>
+    <button id="mem3-button">Memory 3</button>
     <h1>My Top 3 Memories of <span>This Year</span></h1>
-    <ol>
+    <ul>
       <li>
-        <h3 id="mem1">Memory #1</h3>
+        <h3 id="mem1">Boston day trip</h3>
         <p>More about this memory.</p>
       </li>
 
       <li>
-        <h3 id="mem2">Memory #2</h3>
+        <h3 id="mem2">Halloween</h3>
         <p>More about this memory.</p>
       </li>
 
       <li>
-        <h3 id="mem3">Memory #3</h3>
+        <h3 id="mem3">Bowling</h3>
         <p>More about this memory</p>
       </li>
-    </ol>
+    </ul>
+    <div class="container">
+    <div id="mem1flip">Boston Day Trip</div>
+
+    <div id="mem2flip">Halloween</div>
+
+    <div id="mem3flip">Bowling</div>
+    
+    </div>
+
+    <div id="mem1panel">More about this memory...</div>
+    <div id="mem2panel">More about this memory...</div>
+    <div id="mem3panel">More about this memory...</div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
@@ -59,6 +72,24 @@ Select ONE Additional
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
         $("#mem3").text("Coding Parties! 🎉");
+      });
+
+      $(document).ready(function(){
+        $("#mem1flip").click(function(){
+        $("#mem1panel").slideDown("slow");
+        });
+      });
+
+      $(document).ready(function(){
+        $("#mem2flip").click(function(){
+        $("#mem2panel").slideDown("slow");
+        });
+      });
+
+      $(document).ready(function(){
+        $("#mem3flip").click(function(){
+        $("#mem3panel").slideDown("slow");
+        });
       });
 
 
