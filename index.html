@@ -2,13 +2,13 @@
 Requirements
 [  ] $() Select by Element, ID AND Class 
 [  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
+[ yes ] Add Five CSS Declarations
 [  ] Include Three Images
 
 Select ONE Additional 
 [ no ] Feature 1 - Use .hide() & .show() method
 [ no ] Feature 2 - Use .addClass() method
-[ no ] Feature 3 - Use .slideDown() method
+[ yes ] Feature 3 - Use .slideDown() method
 [ no ] Feature 4 - Use .mouseover() method
 [ no ] Feature 5 - Use .fadeIn() method
 -->
@@ -21,58 +21,31 @@ Select ONE Additional
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <button id="mem1-button">Memory 1</button>
-    <button id="mem2-button">Memory 2</button>
-    <button id="mem3-button">Memory 3</button>
+
     <h1>My Top 3 Memories of <span>This Year</span></h1>
-    <ul>
-      <li>
-        <h3 id="mem1">Boston day trip</h3>
-        <p>More about this memory.</p>
-      </li>
 
-      <li>
-        <h3 id="mem2">Halloween</h3>
-        <p>More about this memory.</p>
-      </li>
-
-      <li>
-        <h3 id="mem3">Bowling</h3>
-        <p>More about this memory</p>
-      </li>
-    </ul>
+    
     <div class="container">
-    <div id="mem1flip">Boston Day Trip</div>
+    <div id="mem1flip" class="memtitle">Boston Day Trip</div>
 
-    <div id="mem2flip">Halloween</div>
+    <div id="mem2flip" class="memtitle">Halloween</div>
 
-    <div id="mem3flip">Bowling</div>
+    <div id="mem3flip" class="memtitle">Bowling</div>
     
     </div>
+    <div class="container">
+    <div id="mem1panel" class="memtitle">In March, five of my friends and I took a bus visited Boston for a day. We walked around the city and took the subway, visiting places like the Boston Museum of Fine Arts, the Boston Public Library, Faneuil Hall marketplace (where we got food), and the various statues and buildings around the city. We had so much fun and nearly missed our bus back to NY.</div>
 
-    <div id="mem1panel">More about this memory...</div>
-    <div id="mem2panel">More about this memory...</div>
-    <div id="mem3panel">More about this memory...</div>
+    <div id="mem2panel" class="memtitle">On Halloween, me and some of my friends were wearing matching costumes and we walked around Manhatten seeing others in costumes and went into a extremely scary haunted house where I genuienly thought they were going to kill me.</div>
+
+    <div id="mem3panel" class="memtitle">In April me and two of my friends spent the day getting food in Flushing and then going bowling. I sucked and lost every round but it was still super fun.</div>
+    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
 
-      // ======================== Button #1
-      $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
-      });
-
-      // ======================== Button #2
-      $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
-      });
-
-      // ======================== Button #3
-      $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
-        $("#mem3").text("Coding Parties! 🎉");
-      });
+      
 
       $(document).ready(function(){
         $("#mem1flip").click(function(){
@@ -91,6 +64,15 @@ Select ONE Additional
         $("#mem3panel").slideDown("slow");
         });
       });
+
+      $("h1").css("text-align", "center")
+      $("h1").css("color", "#389981")
+
+      $("#mem1flip").css("margin-top", "50px")
+      $("#mem2flip").css("margin-top", "50px")
+      $("#mem3flip").css("margin-top", "50px")
+
+
 
 
     </script>

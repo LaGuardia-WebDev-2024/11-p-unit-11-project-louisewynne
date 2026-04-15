@@ -2,28 +2,36 @@
 
 /* ======================== CSS Rule #1 */
 html {
-  background-color: white;
-  padding-left: 20px;
+  background-color: #e9fffa;
 }
+
 
 /* ======================== CSS Rule #2 */
 h1 {
   font-family: "Poetsen One", sans-serif;
+  margin-top: 50px;
 }
 
 .container {
   display: flex;
 }
 
-#mem1panel, #mem1flip, #mem2panel, #mem2flip, #mem3flip, #mem3panel {
+.memtitle {
   padding: 5px;
+}
+
+#mem1flip, #mem2flip, #mem3flip {
+  width: 100%;
+  background-color: #389981; 
+  color: #ffcec5;
+  
   text-align: center;
-  background-color: #afd7df; 
-  width: 300px;
 }
 
 #mem1panel, #mem2panel, #mem3panel {
   padding: 50px;
   display: none;
-  background-color: #ddf9ff;
+  background-color: #ffcec5;
+  color: #389981;
+  width: 28vw;
 }
