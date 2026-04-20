@@ -30,6 +30,10 @@ h1 {
   padding: 5px;
 }
 
+.images {
+  height: 200px;
+}
+
 #mem1flip, #mem2flip, #mem3flip {
   width: 100%;
   background-color: #389981; 
@@ -45,7 +49,7 @@ h1 {
   background-color: #ffcec5;
   color: #389981;
   width: 28vw;
-  height: 400px;
+  height: 550px;
   text-align: center;
   font-family: "Faculty Glyphic", sans-serif;
   font-weight: 400;
